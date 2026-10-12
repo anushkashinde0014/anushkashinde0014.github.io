@@ -11,11 +11,6 @@
   --shadow: 0 18px 40px rgba(37, 29, 20, .10);
 }
 
-img {
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
 [data-theme="dark"] {
   --paper: #171918;
   --paper-deep: #202522;
@@ -611,10 +606,11 @@ h2 em {
    ABOUT
 ========================= */
 
-.section-grid {
-  display: grid;
+.section-flex {
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 110px;
+  flex-direction: column;
 }
 
 .section-heading h2 {
@@ -1712,3 +1708,13 @@ h2 em {
   border-radius: 7px;
   transform: rotate(20deg);
 }
+
+.project-4{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 7px;
+  transform: rotate(20deg);
+} 
+
